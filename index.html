@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Harvest Market | Farm-to-Table Grocery Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Fresh Harvest Market</a>
+            <nav class="nav-links">
+                <a href="#our-story">Our Story</a>
+                <a href="#shop" id="shopLink">Shop</a>
+                <a href="#" id="loginToggle">Login</a>
+                <a href="#" id="cartToggle">🛒 Cart (<span id="cartCount">0</span>)</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Fresh. Local. Delivered.</h1>
+            <p>From our family farm to your doorstep, we're bringing the freshest, most sustainable produce directly to your home. Experience the difference of truly farm-fresh groceries.</p>
+            <a href="#shop" class="cta-button">Start Shopping</a>
+        </div>
+    </section>
+
+    <section id="our-story" class="our-story container">
+        <div class="story-content">
+            <div class="story-text">
+                <h2>Our Journey Begins</h2>
+                <p>Fresh Harvest Market was born from a simple dream: to reconnect families with the food they eat. Founded by the Rodriguez family, who have been farmers for three generations, we saw a growing disconnect between consumers and the source of their food.</p>
+                <p>What started as a small local farm stand has grown into a mission-driven marketplace. We believe in supporting local farmers, promoting sustainable agriculture, and delivering the highest quality, freshest produce possible.</p>
+                <p>Every product we sell is carefully selected, ensuring that when you shop with us, you're not just buying groceries – you're supporting a community of hardworking farmers and sustainable food systems.</p>
+            </div>
+            <div class="story-image">
+                <img src="watercolor-illustration-beet-field-with-rows-green-leaves-red-stems-sunlight-concept-agriculture-crop-growth-farming-landscape-organic-vegetables-harvest_981050-24225.jpg"Farm landscape with fresh produce">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Fresh Harvest Market?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Local Farmers</h3>
+                    <p>We partner directly with local farmers, ensuring fair compensation and supporting our community's agricultural ecosystem.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Sustainable Practices</h3>
+                    <p>Our commitment to organic, eco-friendly farming means better food for you and a healthier planet.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Convenient Delivery</h3>
+                    <p>Fresh, high-quality groceries delivered right to your doorstep, saving you time without compromising on quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section (Initially Hidden) -->
+    <section id="shop" style="display:none;">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div id="products" class="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <p id="loginMessage"></p>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cartItems">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div id="cartTotal">Total: $0.00</div>
+            <button id="checkoutBtn" class="submit-btn">Checkout</button>
+            <p id="cartMessage"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Fresh Harvest Market. Delivering fresh goodness!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
